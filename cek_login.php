@@ -1,5 +1,5 @@
 <?php
-require 'koenksi.php';
+require 'koneksi.php';
 
 $user = $_POST['username'];
 $pass = $_POST['password'];
