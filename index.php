@@ -1,30 +1,3 @@
-<?php
-
-session_start();
-
-require 'koneksi.php';
-
-if (isset($_POST["login"])) {
-  $user = $_POST["username"];
-  $pass = $_POST["password"];
-
-  $petugas = mysqli_query($conn, "SELECT * FROM tb_petugas WHERE username = '$user'");
-
-  // Cek username
-  if (mysqli_num_rows($petugas) === 1) {
-    $rowPetugas = mysqli_fetch_assoc($petugas);
-    if (password_verify($pass, $rowPetugas["password"])) {
-      $_SESSION['login'] = true;
-      $_SESSION['user'] = $rowPetugas["nama_petugas"];
-      $_SESSION['level'] = "petugas";
-
-      header("location: petugas/halaman_petugas.php");
-    } else {
-      $errorPass = true;
-    }
-  }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
