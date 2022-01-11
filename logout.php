@@ -1,10 +1,10 @@
 <?php
 
 session_start();
-unset($_SESSION['username']);
-unset($_SESSION['password']);
-unset($_SESSION['nama_lengkap']);
-unset($_SESSION['level']);
-
+$_SESSION = [];
+session_unset();
 session_destroy();
-echo "<script>alert('Anda telah keluar dari halaman');document.location='index.php'</script>";
+
+
+header("location: index.php");
+exit;

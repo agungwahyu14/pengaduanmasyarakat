@@ -7,7 +7,7 @@ $sql = mysqli_query($conn, "SELECT * FROM tb_petugas WHERE username='$user' AND 
 $cek = mysqli_num_rows($sql);
 
 if ($cek > 0) {
-    $data = mysqli_fetch_array($sql);
+    $data = mysqli_fetch_assoc($sql);
     if ($data['level'] == "admin") {
         session_start();
         $_SESSION['user'] = $user;
@@ -15,7 +15,7 @@ if ($cek > 0) {
         $_SESSION['level'] = $data['level'];
 
         header("location: admin/admin.php");
-    } elseif ($data['level'] == "petugas"); {
+    } elseif ($data['level'] == "petugas") {
         session_start();
         $_SESSION['user'] = $user;
         $_SESSION['nama'] = $data['nama_petugas'];
