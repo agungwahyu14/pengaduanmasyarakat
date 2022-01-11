@@ -5,10 +5,11 @@ $nama = $_POST['nama'];
 $user = $_POST['username'];
 $pass = $_POST['password'];
 $telp = $_POST['telp'];
+$level = $_POST['level'];
 
-$sql = mysqli_query($conn, "INSERT INTO tb_masyarakat VALUES('$nik','$nama','$user','$pass','$telp')");
+$masyarakat = mysqli_query($conn, "INSERT INTO tb_masyarakat VALUES('$nik','$nama','$user','$pass','$telp','$level')");
 
-if ($sql) {
+if ($masyarakat) {
 ?>
     <script type="text/javascript">
         alert('Data Berhasil Disimpan,Silahkan Gunakan Untuk Login');

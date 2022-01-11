@@ -61,6 +61,12 @@
                                                 <input type="text" class="form-control form-control-user" name="telp" placeholder="Masukkan No Telepon" autocomplete="off">
                                             </div>
                                         </div>
+
+                                        <div class="form-group">
+                                            <select name="level" class="form-control dropdown-toggle" required>
+                                                <option selected value="masyarakat" class="dropdown-item">Masyarakat</option>
+                                            </select>
+                                        </div>
                                         <button class="btn btn-danger btn-user btn-block" type="submit" value="Daftar!">Register</button>
 
                                     </form>
