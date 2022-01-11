@@ -337,7 +337,7 @@ if ($_SESSION['level'] != "admin") {
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../logout.out" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="../logout.php" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -703,7 +703,7 @@ if ($_SESSION['level'] != "admin") {
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="assets//jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->

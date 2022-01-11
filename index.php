@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,9 +36,9 @@
               <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
               <div class="col-lg-6">
                 <div class="p-5">
-                  <form method="POST" action="" class="user">
+                  <form method="POST" action="cek_login.php" class="user">
                     <div class="text-center">
-                      <h1 class="h3 text-gray-900 mb-4">PENGADUAN MASYARAKAT</h1>
+                      <h1 class="h3 text-gray-900 mb-4">SELAMAT DATANG</h1>
                       <p class="mt-4">Masukkan Data anda dengan Benar!</p>
                       <hr>
                     </div>
@@ -63,10 +62,6 @@
                   <hr>
                   <div class="text-center">
                     <p>No Have Account?<a class="medium" href="register.php"> Create Account!</a></p>
-                  </div>
-                  <hr>
-                  <div class="text-center">
-                    <p><a class="medium" href="index2.php"> Masuk Sebagai Admin/Petugas</a></p>
                   </div>
                 </div>
               </div>
