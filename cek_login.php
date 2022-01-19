@@ -17,23 +17,23 @@ if ($cekMasyarakat > 0) {
         $_SESSION['level'] = $data['level'];
 
         header("location: masyarakat/masyarakat.php");
-    } elseif ($cekPetugas > 0) {
-        $data = mysqli_fetch_assoc($petugas);
-        if ($data['level'] == "admin") {
-            session_start();
-            $_SESSION['user'] = $user;
-            $_SESSION['nama'] = $data['nama_petugas'];
-            $_SESSION['level'] = $data['level'];
+    }
+} elseif ($cekPetugas > 0) {
+    $data = mysqli_fetch_assoc($petugas);
+    if ($data['level'] == "admin") {
+        session_start();
+        $_SESSION['user'] = $user;
+        $_SESSION['nama'] = $data['nama_petugas'];
+        $_SESSION['level'] = $data['level'];
 
-            header("location: admin/admin.php");
-        } elseif ($data['level'] == "petugas") {
-            session_start();
-            $_SESSION['user'] = $user;
-            $_SESSION['nama'] = $data['nama_petugas'];
-            $_SESSION['level'] = $data['level'];
+        header("location: admin/admin.php");
+    } elseif ($data['level'] == "petugas") {
+        session_start();
+        $_SESSION['user'] = $user;
+        $_SESSION['nama'] = $data['nama_petugas'];
+        $_SESSION['level'] = $data['level'];
 
-            header("location: petugas/petugas.php");
-        }
+        header("location: petugas/petugas.php");
     }
 } else {
 ?>

@@ -9,6 +9,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <style>
+    .in-img {
+      background: url("img/index.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+
   <title>Halaman Login</title>
 
   <!-- Custom fonts for this template-->
@@ -33,7 +42,7 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6 d-none d-lg-block in-img"></div>
               <div class="col-lg-6">
                 <div class="p-5">
                   <form method="POST" action="cek_login.php" class="user">

@@ -9,6 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <style>
+        .in-img {
+            background: url("img/index.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
     <title>Halaman Register</title>
 
     <!-- Custom fonts for this template-->
@@ -20,7 +28,7 @@
 
 </head>
 
-<body class="bg-gradient-danger">
+<body class="bg-gradient-primary">
 
     <div class="container-fluid">
 
@@ -33,7 +41,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block in-img"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <form method="POST" action="simpan_masyarakat.php" class="user">
@@ -60,14 +68,17 @@
                                             <div class="col-sm-6">
                                                 <input type="text" class="form-control form-control-user" name="telp" placeholder="Masukkan No Telepon" autocomplete="off">
                                             </div>
+                                            <div class="col-sm-6">
+                                                <input type="hidden" class="form-control form-control-user" value="masyarakat" name="level" placeholder="" autocomplete="off">
+                                            </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <!-- <div class="form-group"> 
                                             <select name="level" class="form-control dropdown-toggle" required>
                                                 <option selected value="masyarakat" class="dropdown-item">Masyarakat</option>
                                             </select>
-                                        </div>
-                                        <button class="btn btn-danger btn-user btn-block" type="submit" value="Daftar!">Register</button>
+                                        </div>-->
+                                        <button class="btn btn-primary btn-user btn-block" type="submit" value="Daftar!">Register</button>
 
                                     </form>
                                     <hr>
@@ -82,9 +93,6 @@
             </div>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,170.7C384,203,480,213,576,192C672,171,768,117,864,112C960,107,1056,149,1152,160C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" style="user-select: auto;"></path>
-    </svg>
 
     <!-- Bootstrap core JavaScript-->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
