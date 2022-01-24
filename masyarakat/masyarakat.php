@@ -357,7 +357,7 @@ if ($_SESSION['level'] != "masyarakat") {
                         <div class="col-xl-12 col-lg-8">
                             <section class="section">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
 
                                         <div class="card">
                                             <div class="card-body">
@@ -367,7 +367,7 @@ if ($_SESSION['level'] != "masyarakat") {
                                                 <form>
                                                     <div class="row mb-3">
                                                         <label for="inputText" class="col-sm-2 col-form-label">Text</label>
-                                                        <div class="col-sm-12">
+                                                        <div class="col-sm-10">
                                                             <input type="text" class="form-control">
                                                         </div>
                                                     </div>
@@ -391,8 +391,8 @@ if ($_SESSION['level'] != "masyarakat") {
                                                     </div>
                                                     <div class="row mb-3">
                                                         <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
-                                                        <div class="col-sm-10">
-                                                            <input class="form-control" type="file" id="formFile">
+                                                        <div class="col-sm-4">
+                                                            <input type="file" name="cover" id="formFile">
                                                         </div>
                                                     </div>
                                                     <div class="row mb-3">
@@ -401,10 +401,15 @@ if ($_SESSION['level'] != "masyarakat") {
                                                             <input type="date" class="form-control">
                                                         </div>
                                                     </div>
-                                                    <div class="row mb-3">
+                                                    <div class="row mb-5">
                                                         <label for="inputTime" class="col-sm-2 col-form-label">Time</label>
                                                         <div class="col-sm-10">
                                                             <input type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-sm-12">
+                                                            <button class="btn btn-user btn-primary btn-block" type="submit" name="login">Sign in</button>
                                                         </div>
                                                     </div>
                                             </div>
